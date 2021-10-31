@@ -10,5 +10,6 @@
 
 void String_C_Style_Sample();
 void IterateString_C_Sample();
+void IterateString_C_Sample2();
 
 #endif /* Exercise_03_hpp */

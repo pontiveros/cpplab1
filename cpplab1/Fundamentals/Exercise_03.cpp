@@ -48,3 +48,23 @@ void IterateString_C_Sample()
     
     printf("%s\n", message);
 }
+
+void ConvertStringToUpper(char *message, int length)
+{
+    for (int index = 0; index < length; index++) {
+        if (message[index] == 'e') {
+            continue;
+        }
+        message[index] = toupper(message[index]);
+    }
+}
+
+void IterateString_C_Sample2()
+{
+    char message[] = "hello, this is a message";
+    int lenght = (int)strlen(message);
+    
+    printf("%s\n", message);
+    ConvertStringToUpper(message, lenght);
+    printf("%s\n", message);
+}
