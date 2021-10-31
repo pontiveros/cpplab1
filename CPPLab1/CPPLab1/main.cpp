@@ -26,7 +26,8 @@ int main(int argc, const char * argv[]) {
 //    Function_Recursive_Sample();
 //    Function_Return_Sample();
 //    Function_Overloading_Sample();
-    String_C_Style_Sample();
+//    String_C_Style_Sample();
+    IterateString_C_Sample();
     
     std::cout << "end of program\n";
     return 0;
