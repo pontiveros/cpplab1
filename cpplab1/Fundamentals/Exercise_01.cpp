@@ -31,7 +31,7 @@ void DataTypes_Sample()
     
     // Float point types
     float       _floatValue   = 1.1;
-    double      _doubleValue  = 2.2;
+    double      _doubleValue  = 2.2987879879809808;
     long double _lDoubleValue = 3.3;
     
     cout << "size of char: "      << sizeof(char)       << " \tvalue: " << _charValue   << "\n";

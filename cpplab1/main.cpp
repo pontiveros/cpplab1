@@ -17,7 +17,7 @@
 
 int main(int argc, const char * argv[]) {
     
-//    DataTypes_Sample();
+    DataTypes_Sample();
 //    ControlFlow_Sample();
 //    Array_Sample();
 
@@ -27,7 +27,7 @@ int main(int argc, const char * argv[]) {
 //    Function_Return_Sample();
 //    Function_Overloading_Sample();
 //    String_C_Style_Sample();
-    IterateString_C_Sample();
+//    IterateString_C_Sample();
     
     std::cout << "end of program\n";
     return 0;
