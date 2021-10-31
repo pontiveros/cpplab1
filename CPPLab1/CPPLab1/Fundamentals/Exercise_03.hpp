@@ -9,5 +9,8 @@
 #define Exercise_03_hpp
 
 #include <stdio.h>
+#include <string.h>
+
+void String_C_Style_Sample();
 
 #endif /* Exercise_03_hpp */
