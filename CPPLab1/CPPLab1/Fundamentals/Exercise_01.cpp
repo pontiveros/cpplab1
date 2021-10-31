@@ -9,7 +9,9 @@
 
 using namespace std;
 
+
 #define MAX_VALUE_ALLOWED 9
+#define SIZE_INT_ARRAY    5
 
 void DataTypes_Sample()
 {
@@ -81,4 +83,40 @@ void ControlFlow_Sample()
             break;
         }
     }
+}
+
+void Print_ArrayInt_Sample(int array[], int size)
+{
+    for (int index = 0; index < size; index++) {
+        cout << array[index];
+        
+        if ((index + 1) < size) {
+            cout << " - ";
+        }
+    }
+    
+    cout << endl;
+}
+
+void Array_Sample()
+{
+    int input = 0;
+    int v1[]  = {2, 3, 8, 1, 6, 4, 5, -1};  // Array of integers
+    int v2[SIZE_INT_ARRAY];
+    char message[] = "Hello world!";        // Array of chars (C string)
+    
+    cout << v1 << "\n";
+    cout << message << "\n";
+    
+    for (int i = 0; i < 12; i++) {
+        cout << message[i] << "\n";
+    }
+    
+    for (int index = 0; index < SIZE_INT_ARRAY; index++) {
+        cout << "Insert an Integer: ";
+        cin >> input;
+        v2[index] = input;
+    }
+    
+    Print_ArrayInt_Sample(v2, SIZE_INT_ARRAY);
 }

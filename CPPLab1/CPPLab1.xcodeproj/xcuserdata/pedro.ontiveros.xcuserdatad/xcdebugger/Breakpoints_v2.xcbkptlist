@@ -23,32 +23,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "616F0C65-47CF-4EAF-8DA3-DCCAA9D26A03"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CPPLab1/Fundamentals/Exercise_01.cpp"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
-            landmarkName = "ControlFlow_Sample()"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "603A8AC0-0A01-4797-9355-8D4CF0EFDADA"
-            shouldBeEnabled = "Yes"
+            uuid = "8C28FE28-C9F9-47DA-B29E-9D93B3334080"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CPPLab1/Fundamentals/Exercise_02.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "Function_ParametersSample()"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "Function_Return_Sample()"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>

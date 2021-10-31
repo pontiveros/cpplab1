@@ -12,5 +12,6 @@
 
 void DataTypes_Sample();
 void ControlFlow_Sample();
+void Array_Sample();
 
 #endif /* Exercise_01_hpp */
