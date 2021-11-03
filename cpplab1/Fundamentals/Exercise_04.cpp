@@ -5,8 +5,10 @@
 //  Created by Pedro Ontiveros on 11/2/21.
 //
 
+#include <stdio.h>
+#include <ctype.h>
+#include <string.h>
 #include "Exercise_04.hpp"
-
 
 void Pointer_Base_Concept()
 {
@@ -32,4 +34,32 @@ void Pointer_Base_Concept()
     printf("Value of p2: %p\n", p2);
     printf("Content of v2 via p2: %ld\n", *p2);
     printf("Address of p2: %p\n\n", &p2);
+}
+
+void Array_And_Pointer()
+{
+    char text[] = "This is a message\0"; // Array of chars
+    long size   = (long)strlen(text);
+    char *ptr   = text;   // Pointer to and array of thars, ptr -> text
+    
+    for (int index = 0; index < size; index++) {
+        printf("%c", text[index]);
+    }
+    
+    printf("\n\n");
+    
+    while (*ptr != '\0') {
+        printf("%c", *ptr);
+        ptr++; // ptr = ptr -> next char
+    }
+    
+    ptr = text; // Set the pointer at the first element
+    printf("\n");
+    
+    while (*ptr != 0) {
+        printf("%c", *ptr);
+        ptr++; // ptr = ptr -> next char
+    }
+    
+    printf("\n");
 }

@@ -37,7 +37,8 @@ int main(int argc, const char * argv[]) {
 //    CPP_String_ReadFromKeybEx();
 //    CPP_String_Iteration();
     
-    Pointer_Base_Concept();
+//    Pointer_Base_Concept();
+    Array_And_Pointer();
     
     std::cout << "end of program\n";
     return 0;
