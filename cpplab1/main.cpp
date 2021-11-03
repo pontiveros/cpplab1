@@ -14,6 +14,7 @@
 #include "Fundamentals/Exercise_01.hpp"
 #include "Fundamentals/Exercise_02.hpp"
 #include "Fundamentals/Exercise_03.hpp"
+#include "Fundamentals/Exercise_04.hpp"
 
 int main(int argc, const char * argv[]) {
     
@@ -26,9 +27,17 @@ int main(int argc, const char * argv[]) {
 //    Function_Recursive_Sample();
 //    Function_Return_Sample();
 //    Function_Overloading_Sample();
-//    String_C_Style_Sample();
-//    IterateString_C_Sample();
-    IterateString_C_Sample2();
+
+//    C_String_Style();
+//    C_String_Iterate_Sample();
+//    C_String_Iterate_Sample2();
+
+//    CPP_String_Concatenation();
+//    CPP_String_ReadFromKeyb();
+//    CPP_String_ReadFromKeybEx();
+//    CPP_String_Iteration();
+    
+    Pointer_Base_Concept();
     
     std::cout << "end of program\n";
     return 0;

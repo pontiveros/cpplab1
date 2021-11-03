@@ -10,6 +10,10 @@
 #include <ctype.h>
 #include <string.h>
 
+#include <iostream>
+
+using namespace std;
+
 #define STRING_BUFFER 256
 
 void Constant_CString_Sample()
@@ -26,13 +30,13 @@ void Reading_CString_Sample()
     printf("Your message is: %s\n", message);
 }
 
-void String_C_Style_Sample()
+void C_String_Style()
 {
     Constant_CString_Sample();
     Reading_CString_Sample();
 }
 
-void IterateString_C_Sample()
+void C_String_Iterate_Sample2()
 {
     char message[] = "hello, this is a message";
     int lenght = (int)strlen(message);
@@ -59,7 +63,7 @@ void ConvertStringToUpper(char *message, int length)
     }
 }
 
-void IterateString_C_Sample2()
+void C_String_Iterate_Sample()
 {
     char message[] = "hello, this is a message";
     int lenght = (int)strlen(message);
@@ -67,4 +71,49 @@ void IterateString_C_Sample2()
     printf("%s\n", message);
     ConvertStringToUpper(message, lenght);
     printf("%s\n", message);
+}
+
+void CPP_String_Object()
+{
+    string message = "Hello, this is a message from C+PP string";
+    cout << message << endl;
+}
+
+void CPP_String_Concatenation()
+{
+    string str1 = "Hello, ";
+    string str2 = "Florencia!";
+    
+    cout << str1 + str2 << endl;
+}
+
+void CPP_String_ReadFromKeyb()
+{
+    string input;
+    
+    cout << "Insert text here: ";
+    cin  >> input; // This way is NOT able to read spaces between words
+    cout << "Your wrote: " << input << endl;
+}
+
+void CPP_String_ReadFromKeybEx()
+{
+    string input;
+    
+    cout << "Insert text here: ";
+    getline(std::cin >> std::ws, input); // This way is able to read spaces between words
+    cout << "Your wrote: " << input << endl;
+}
+
+void CPP_String_Iteration()
+{
+    string message = "Hello Florencia!";
+    
+    cout << message << "\n";
+    
+    for (int index = 0; index < message.length(); index++) {
+        cout << message[index] << ' ';
+    }
+    
+    cout << "\n";
 }

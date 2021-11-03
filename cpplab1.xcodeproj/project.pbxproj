@@ -11,6 +11,7 @@
 		141ACB32272F4F780070FC0D /* Exercise_01.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 141ACB2C272F4F780070FC0D /* Exercise_01.cpp */; };
 		141ACB33272F4F780070FC0D /* Exercise_02.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 141ACB2D272F4F780070FC0D /* Exercise_02.cpp */; };
 		141ACB34272F4F780070FC0D /* Exercise_03.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 141ACB2F272F4F780070FC0D /* Exercise_03.cpp */; };
+		F31F77B527322DC4002E00B9 /* Exercise_04.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F31F77B327322DC4002E00B9 /* Exercise_04.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,8 @@
 		141ACB2F272F4F780070FC0D /* Exercise_03.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Exercise_03.cpp; sourceTree = "<group>"; };
 		141ACB30272F4F780070FC0D /* Exercise_03.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Exercise_03.hpp; sourceTree = "<group>"; };
 		141ACB31272F4F780070FC0D /* Exercise_02.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Exercise_02.hpp; sourceTree = "<group>"; };
+		F31F77B327322DC4002E00B9 /* Exercise_04.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Exercise_04.cpp; path = CPPLab1/Fundamentals/Exercise_04.cpp; sourceTree = SOURCE_ROOT; };
+		F31F77B427322DC4002E00B9 /* Exercise_04.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Exercise_04.hpp; path = CPPLab1/Fundamentals/Exercise_04.hpp; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,8 @@
 				141ACB2D272F4F780070FC0D /* Exercise_02.cpp */,
 				141ACB30272F4F780070FC0D /* Exercise_03.hpp */,
 				141ACB2F272F4F780070FC0D /* Exercise_03.cpp */,
+				F31F77B427322DC4002E00B9 /* Exercise_04.hpp */,
+				F31F77B327322DC4002E00B9 /* Exercise_04.cpp */,
 			);
 			path = Fundamentals;
 			sourceTree = "<group>";
@@ -145,6 +150,7 @@
 				141ACB32272F4F780070FC0D /* Exercise_01.cpp in Sources */,
 				141ACB25272F4F390070FC0D /* main.cpp in Sources */,
 				141ACB34272F4F780070FC0D /* Exercise_03.cpp in Sources */,
+				F31F77B527322DC4002E00B9 /* Exercise_04.cpp in Sources */,
 				141ACB33272F4F780070FC0D /* Exercise_02.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
