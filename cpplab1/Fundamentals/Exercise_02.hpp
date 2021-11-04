@@ -16,6 +16,7 @@ void Function_Sample_02();
 void Function_Parameters_Sample();
 void Function_ParameterValue_Sample(int value);
 void Function_ParameterReference_Sample(int &value);
+void Function_ParameterPointer_Sample(long *value);
 void Function_ParameterDefault_Sample(int value = 100);
 
 void Function_Recursive_Sample();

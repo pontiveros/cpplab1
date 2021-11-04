@@ -23,12 +23,18 @@ void Function_Sample_02()
 
 void Function_Parameters_Sample()
 {
-    int v1 = 10;
+    int  v1 = 10;
+    long v2 = 800;
+    
     cout << v1 << "\n";
     Function_ParameterValue_Sample(v1);
     cout << v1 << "\n";
     Function_ParameterReference_Sample(v1);
     cout << v1 << "\n";
+    
+    cout << "Value v2: " << v2 << "\n";
+    Function_ParameterPointer_Sample(&v2);
+    cout << "Value v2: " << v2 << "\n";
     
     Function_ParameterDefault_Sample();
     Function_ParameterDefault_Sample(120);
@@ -44,6 +50,15 @@ void Function_ParameterReference_Sample(int &value)
 {
     value = 50;
     cout << value << "\n";
+}
+
+void Function_ParameterPointer_Sample(long *value)
+{
+    assert(value);
+    if (value != NULL) {
+        *value = 900;
+        printf("value: %ld\n", *value);
+    }
 }
 
 void Function_ParameterDefault_Sample(int value)

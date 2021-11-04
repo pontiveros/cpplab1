@@ -117,3 +117,17 @@ void CPP_String_Iteration()
     
     cout << "\n";
 }
+
+void CPP_String_Iteration2()
+{
+    string input;
+    
+    cout << "Insert text: ";
+    getline(std::cin >> std::ws, input); // This way is able to read spaces between words
+    
+    for (const char c: input) {
+        cout << (char)toupper(c); // Is necessary casting
+    }
+    
+    cout << "\n";
+}

@@ -22,5 +22,6 @@ void CPP_String_Concatenation();
 void CPP_String_ReadFromKeyb();
 void CPP_String_ReadFromKeybEx();
 void CPP_String_Iteration();
+void CPP_String_Iteration2();
 
 #endif /* Exercise_03_hpp */
