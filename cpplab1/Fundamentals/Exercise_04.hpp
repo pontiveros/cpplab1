@@ -10,5 +10,7 @@
 
 void Pointer_Base_Concept();
 void Array_And_Pointer();
+void Pointer_To_Function();
+void Array_Of_Pointers();
 
 #endif /* Exercise_04_hpp */

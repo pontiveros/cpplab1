@@ -23,7 +23,7 @@ int main(int argc, const char * argv[]) {
 //    Array_Sample();
 
 //    Function_Sample_01();
-    Function_Parameters_Sample();
+//    Function_Parameters_Sample();
 //    Function_Recursive_Sample();
 //    Function_Return_Sample();
 //    Function_Overloading_Sample();
@@ -36,11 +36,11 @@ int main(int argc, const char * argv[]) {
 //    CPP_String_ReadFromKeyb();
 //    CPP_String_ReadFromKeybEx();
 //    CPP_String_Iteration();
-    CPP_String_Iteration2();
+//    CPP_String_Iteration2();
     
 //    Pointer_Base_Concept();
 //    Array_And_Pointer();
-    
+    Pointer_To_Function();
     std::cout << "end of program\n";
     return 0;
 }

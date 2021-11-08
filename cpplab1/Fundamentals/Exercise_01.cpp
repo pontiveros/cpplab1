@@ -45,7 +45,14 @@ void DataTypes_Sample()
     
     cout << "size of float: "       << sizeof(float)       << " \tvalue: " << _floatValue   << "\n";
     cout << "size of double: "      << sizeof(double)      << " \tvalue: " << _doubleValue  << "\n";
-    cout << "size of long double: " << sizeof(long double) << " \tvalue: " << _lDoubleValue << "\n";
+    cout << "size of long double: " << sizeof(long double) << " \tvalue: " << _lDoubleValue << "\n\n";
+    
+    cout << "size of pointer to short: "  << sizeof(short*)   << "\n";
+    cout << "size of pointer to char: "   << sizeof(char*)    << "\n";
+    cout << "size of pointer to int: "    << sizeof(int*)     << "\n";
+    cout << "size of pointer to long: "   << sizeof(long*)    << "\n";
+    cout << "size of pointer to float: "  << sizeof(float*)   << "\n";
+    cout << "size of pointer to double: " << sizeof(double*)  << "\n";
 }
 
 void ControlFlow_Sample()

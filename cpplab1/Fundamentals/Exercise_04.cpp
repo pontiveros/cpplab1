@@ -63,3 +63,46 @@ void Array_And_Pointer()
     
     printf("\n");
 }
+
+/* AUXILIAR FUNCTIONS */
+long Duplicate(long x)
+{
+    return x * 2;
+}
+
+double TDiv(double a, double b)
+{
+    if (b == 0.0) {
+        return 0.0;
+    } else {
+        return (a / b);
+    }
+}
+
+double TMult(double a, double b)
+{
+    return (a * b);
+}
+
+double TSum(double a, double b)
+{
+    return (a + b);
+}
+
+double T(double a, double b)
+{
+    return (a - b);
+}
+
+void Pointer_To_Function()
+{
+    long (*pfn)(long);
+    pfn = &Duplicate;
+    
+    printf("Duplicate result: %ld\n", pfn(200));
+}
+
+void Array_Of_Pointers()
+{
+    
+}
