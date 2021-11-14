@@ -15,6 +15,8 @@
 #include "Fundamentals/Exercise_02.hpp"
 #include "Fundamentals/Exercise_03.hpp"
 #include "Fundamentals/Exercise_04.hpp"
+#include "Fundamentals/Ex_05_MemAlloc.hpp"
+#include "Fundamentals/Ex_06_Structs.hpp"
 
 int main(int argc, const char * argv[]) {
     
@@ -40,7 +42,15 @@ int main(int argc, const char * argv[]) {
     
 //    Pointer_Base_Concept();
 //    Array_And_Pointer();
-    Pointer_To_Function();
+//    Pointer_To_Function();
+//    Array_Of_Pointers();
+
+//    AllocMemForPrimitive();
+//    AllocMemForString();
+    AllocMemForArrayOfString();
+    
+//    Struct_Fundamentals();
+
     std::cout << "end of program\n";
     return 0;
 }

@@ -70,13 +70,14 @@ long Duplicate(long x)
     return x * 2;
 }
 
-double TDiv(double a, double b)
+double TSum(double a, double b)
 {
-    if (b == 0.0) {
-        return 0.0;
-    } else {
-        return (a / b);
-    }
+    return (a + b);
+}
+
+double TSub(double a, double b)
+{
+    return (a - b);
 }
 
 double TMult(double a, double b)
@@ -84,14 +85,13 @@ double TMult(double a, double b)
     return (a * b);
 }
 
-double TSum(double a, double b)
+double TDiv(double a, double b)
 {
-    return (a + b);
-}
-
-double T(double a, double b)
-{
-    return (a - b);
+    if (b == 0.0) {
+        return 0.0;
+    } else {
+        return (a / b);
+    }
 }
 
 void Pointer_To_Function()
@@ -104,5 +104,13 @@ void Pointer_To_Function()
 
 void Array_Of_Pointers()
 {
+    double a = 2.5;
+    double b = 4.3;
     
+    double (*pfn[])(double, double) = {&TSum, &TSub, &TMult, &TDiv };
+
+    printf("Result of sum for is: %.3lf\n", pfn[0](a, b));
+    printf("Result of substract for is: %.3lf\n", pfn[1](a, b));
+    printf("Result of multi for is: %.3lf\n", pfn[2](a, b));
+    printf("Result of div for is: %.3lf\n", pfn[3](a, b));
 }
