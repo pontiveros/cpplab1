@@ -47,9 +47,9 @@ int main(int argc, const char * argv[]) {
 
 //    AllocMemForPrimitive();
 //    AllocMemForString();
-    AllocMemForArrayOfString();
+//    AllocMemForArrayOfString();
     
-//    Struct_Fundamentals();
+    Struct_Fundamentals();
 
     std::cout << "end of program\n";
     return 0;

@@ -9,20 +9,19 @@
 #ifndef Ex_06_Structs_hpp
 #define Ex_06_Structs_hpp
 
-#include <stdio.h>
-
 void Struct_Fundamentals();
 
-struct TNode {
-    long   _longValue;
-    double _floatValue;
+struct TProduct {
+    long  code;
+    float price;
+    const char *name;
+    const char *description;
 };
 
-struct TPerson {
-
-    long _age;
-    long _nothing;
-    char *_name;
+struct TNode {
+    long value;
+    struct TNode *left;
+    struct TNode *right;
 };
 
 #endif /* Ex_05_Structs_hpp */
