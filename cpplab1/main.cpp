@@ -17,6 +17,8 @@
 #include "Fundamentals/Exercise_04.hpp"
 #include "Fundamentals/Ex_05_MemAlloc.hpp"
 #include "Fundamentals/Ex_06_Structs.hpp"
+#include "Fundamentals/Ex_07_Stack.hpp"
+#include "Fundamentals/Ex_08_List.hpp"
 
 int main(int argc, const char * argv[]) {
     
@@ -49,7 +51,11 @@ int main(int argc, const char * argv[]) {
 //    AllocMemForString();
 //    AllocMemForArrayOfString();
     
-    Struct_Fundamentals();
+//    Struct_Fundamentals_1();
+//    Struct_Fundamentals_2();
+//    Stack_Example();
+    
+    List_Example();
 
     std::cout << "end of program\n";
     return 0;

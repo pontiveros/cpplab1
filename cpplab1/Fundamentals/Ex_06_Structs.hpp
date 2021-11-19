@@ -9,19 +9,14 @@
 #ifndef Ex_06_Structs_hpp
 #define Ex_06_Structs_hpp
 
-void Struct_Fundamentals();
+void Struct_Fundamentals_1();
+void Struct_Fundamentals_2();
 
 struct TProduct {
     long  code;
     float price;
     const char *name;
     const char *description;
-};
-
-struct TNode {
-    long value;
-    struct TNode *left;
-    struct TNode *right;
 };
 
 #endif /* Ex_05_Structs_hpp */

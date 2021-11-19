@@ -11,6 +11,9 @@
 		141ACB32272F4F780070FC0D /* Exercise_01.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 141ACB2C272F4F780070FC0D /* Exercise_01.cpp */; };
 		141ACB33272F4F780070FC0D /* Exercise_02.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 141ACB2D272F4F780070FC0D /* Exercise_02.cpp */; };
 		141ACB34272F4F780070FC0D /* Exercise_03.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 141ACB2F272F4F780070FC0D /* Exercise_03.cpp */; };
+		F318613827435DC9007DB3B2 /* Ex_07_Stack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F318613627435DC9007DB3B2 /* Ex_07_Stack.cpp */; };
+		F318613B274532B0007DB3B2 /* Ex_08_List.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3186139274532B0007DB3B2 /* Ex_08_List.cpp */; };
+		F318613E2747388A007DB3B2 /* TNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F318613C2747388A007DB3B2 /* TNode.cpp */; };
 		F31F77B527322DC4002E00B9 /* Exercise_04.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F31F77B327322DC4002E00B9 /* Exercise_04.cpp */; };
 		F35FC07E273FF46300272550 /* Ex_05_MemAlloc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F35FC07C273FF46300272550 /* Ex_05_MemAlloc.cpp */; };
 		F361D551273F2FC700A1AEA1 /* Ex_06_Structs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F361D54F273F2FC700A1AEA1 /* Ex_06_Structs.cpp */; };
@@ -37,6 +40,12 @@
 		141ACB2F272F4F780070FC0D /* Exercise_03.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Exercise_03.cpp; sourceTree = "<group>"; };
 		141ACB30272F4F780070FC0D /* Exercise_03.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Exercise_03.hpp; sourceTree = "<group>"; };
 		141ACB31272F4F780070FC0D /* Exercise_02.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Exercise_02.hpp; sourceTree = "<group>"; };
+		F318613627435DC9007DB3B2 /* Ex_07_Stack.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Ex_07_Stack.cpp; path = CPPLab1/Fundamentals/Ex_07_Stack.cpp; sourceTree = SOURCE_ROOT; };
+		F318613727435DC9007DB3B2 /* Ex_07_Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Ex_07_Stack.hpp; path = CPPLab1/Fundamentals/Ex_07_Stack.hpp; sourceTree = SOURCE_ROOT; };
+		F3186139274532B0007DB3B2 /* Ex_08_List.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Ex_08_List.cpp; path = CPPLab1/Fundamentals/Ex_08_List.cpp; sourceTree = SOURCE_ROOT; };
+		F318613A274532B0007DB3B2 /* Ex_08_List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Ex_08_List.hpp; path = CPPLab1/Fundamentals/Ex_08_List.hpp; sourceTree = SOURCE_ROOT; };
+		F318613C2747388A007DB3B2 /* TNode.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = TNode.cpp; path = CPPLab1/Fundamentals/TNode.cpp; sourceTree = SOURCE_ROOT; };
+		F318613D2747388A007DB3B2 /* TNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = TNode.hpp; path = CPPLab1/Fundamentals/TNode.hpp; sourceTree = SOURCE_ROOT; };
 		F31F77B327322DC4002E00B9 /* Exercise_04.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Exercise_04.cpp; path = CPPLab1/Fundamentals/Exercise_04.cpp; sourceTree = SOURCE_ROOT; };
 		F31F77B427322DC4002E00B9 /* Exercise_04.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Exercise_04.hpp; path = CPPLab1/Fundamentals/Exercise_04.hpp; sourceTree = SOURCE_ROOT; };
 		F35FC07C273FF46300272550 /* Ex_05_MemAlloc.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Ex_05_MemAlloc.cpp; path = CPPLab1/Fundamentals/Ex_05_MemAlloc.cpp; sourceTree = SOURCE_ROOT; };
@@ -97,6 +106,12 @@
 				F35FC07C273FF46300272550 /* Ex_05_MemAlloc.cpp */,
 				F361D550273F2FC700A1AEA1 /* Ex_06_Structs.hpp */,
 				F361D54F273F2FC700A1AEA1 /* Ex_06_Structs.cpp */,
+				F318613D2747388A007DB3B2 /* TNode.hpp */,
+				F318613C2747388A007DB3B2 /* TNode.cpp */,
+				F318613727435DC9007DB3B2 /* Ex_07_Stack.hpp */,
+				F318613627435DC9007DB3B2 /* Ex_07_Stack.cpp */,
+				F318613A274532B0007DB3B2 /* Ex_08_List.hpp */,
+				F3186139274532B0007DB3B2 /* Ex_08_List.cpp */,
 			);
 			path = Fundamentals;
 			sourceTree = "<group>";
@@ -165,7 +180,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F318613E2747388A007DB3B2 /* TNode.cpp in Sources */,
 				F35FC07E273FF46300272550 /* Ex_05_MemAlloc.cpp in Sources */,
+				F318613B274532B0007DB3B2 /* Ex_08_List.cpp in Sources */,
+				F318613827435DC9007DB3B2 /* Ex_07_Stack.cpp in Sources */,
 				141ACB32272F4F780070FC0D /* Exercise_01.cpp in Sources */,
 				141ACB25272F4F390070FC0D /* main.cpp in Sources */,
 				141ACB34272F4F780070FC0D /* Exercise_03.cpp in Sources */,

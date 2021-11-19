@@ -13,7 +13,6 @@
 
 #define SIZE_OF_BUFFER 256
 
-
 const char *GetStringFromKeyboard(const char *prompt = NULL)
 {
     unsigned long inputLen = 0;
@@ -59,14 +58,14 @@ long GetLongFromKeyboard(const char *prompt = NULL)
 void PrintProduct(struct TProduct product)
 {
     printf("Product Code: %ld\n", product.code);
-    printf("Product Name: %s\n", product.name);
-    printf("Product Description: %s\n", product.description);
+    printf("Product Name: %s\n", (product.name == NULL) ? "empty" : product.name);
+    printf("Product Description: %s\n", (product.description == NULL) ? "empty" : product.description);
     printf("Product Price: %f\n", product.price);
 }
 
-void Struct_Fundamentals()
+void Struct_Fundamentals_1()
 {
-    struct TProduct prod1, prod2;
+    struct TProduct prod1, prod2; // This variables are stored in the stack
     
     prod1.code        = GetLongFromKeyboard("Enter Product Code");
     prod1.name        = GetStringFromKeyboard("Enter Product Name");
@@ -78,4 +77,21 @@ void Struct_Fundamentals()
     prod2 = prod1;
     
     PrintProduct(prod2);
+    
+    printf("%p\n", (void*)prod1.name);
+    printf("%p\n", (void*)prod2.name);
+}
+
+void Struct_Fundamentals_2()
+{
+    struct TProduct *prod = new struct TProduct(); // This variable is stored in the heap
+    
+    prod->code        = GetLongFromKeyboard("Enter Product Code");
+    prod->name        = GetStringFromKeyboard("Enter Product Name");
+    prod->description = GetStringFromKeyboard("Enter Product Description");
+    prod->price       = GetFloatFromKeyboard("Enter Product Price");
+    
+    PrintProduct(*prod);
+    
+    delete prod; // Important: to release the mem
 }
