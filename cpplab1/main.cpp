@@ -20,6 +20,10 @@
 #include "Fundamentals/Ex_07_Stack.hpp"
 #include "Fundamentals/Ex_08_List.hpp"
 
+#include "POO/POO_Exercises.hpp"
+
+using namespace Basic_Classes_Concept;
+
 int main(int argc, const char * argv[]) {
     
 //    DataTypes_Sample();
@@ -55,7 +59,10 @@ int main(int argc, const char * argv[]) {
 //    Struct_Fundamentals_2();
 //    Stack_Example();
     
-    List_Example();
+//    List_Example();
+
+//    Exercise_01();
+    Exercise_02();
 
     std::cout << "end of program\n";
     return 0;

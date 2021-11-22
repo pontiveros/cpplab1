@@ -17,6 +17,11 @@
 		F31F77B527322DC4002E00B9 /* Exercise_04.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F31F77B327322DC4002E00B9 /* Exercise_04.cpp */; };
 		F35FC07E273FF46300272550 /* Ex_05_MemAlloc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F35FC07C273FF46300272550 /* Ex_05_MemAlloc.cpp */; };
 		F361D551273F2FC700A1AEA1 /* Ex_06_Structs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F361D54F273F2FC700A1AEA1 /* Ex_06_Structs.cpp */; };
+		F3DE9C8427489A6C009D400D /* POO_Exercises.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3DE9C8227489A6C009D400D /* POO_Exercises.cpp */; };
+		F3DE9C8727495300009D400D /* GenericAnimal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3DE9C8527495300009D400D /* GenericAnimal.cpp */; };
+		F3DE9C8A274A9720009D400D /* Cat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3DE9C88274A9720009D400D /* Cat.cpp */; };
+		F3DE9C8D274A972E009D400D /* Dog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3DE9C8B274A972E009D400D /* Dog.cpp */; };
+		F3DE9C90274A9739009D400D /* Bird.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3DE9C8E274A9739009D400D /* Bird.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -52,6 +57,16 @@
 		F35FC07D273FF46300272550 /* Ex_05_MemAlloc.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Ex_05_MemAlloc.hpp; path = CPPLab1/Fundamentals/Ex_05_MemAlloc.hpp; sourceTree = SOURCE_ROOT; };
 		F361D54F273F2FC700A1AEA1 /* Ex_06_Structs.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Ex_06_Structs.cpp; path = CPPLab1/Fundamentals/Ex_06_Structs.cpp; sourceTree = SOURCE_ROOT; };
 		F361D550273F2FC700A1AEA1 /* Ex_06_Structs.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Ex_06_Structs.hpp; path = CPPLab1/Fundamentals/Ex_06_Structs.hpp; sourceTree = SOURCE_ROOT; };
+		F3DE9C8227489A6C009D400D /* POO_Exercises.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = POO_Exercises.cpp; path = CPPLab1/POO/POO_Exercises.cpp; sourceTree = SOURCE_ROOT; };
+		F3DE9C8327489A6C009D400D /* POO_Exercises.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = POO_Exercises.hpp; path = CPPLab1/POO/POO_Exercises.hpp; sourceTree = SOURCE_ROOT; };
+		F3DE9C8527495300009D400D /* GenericAnimal.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = GenericAnimal.cpp; path = CPPLab1/POO/GenericAnimal.cpp; sourceTree = SOURCE_ROOT; };
+		F3DE9C8627495300009D400D /* GenericAnimal.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = GenericAnimal.hpp; path = CPPLab1/POO/GenericAnimal.hpp; sourceTree = SOURCE_ROOT; };
+		F3DE9C88274A9720009D400D /* Cat.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Cat.cpp; path = CPPLab1/POO/Cat.cpp; sourceTree = SOURCE_ROOT; };
+		F3DE9C89274A9720009D400D /* Cat.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Cat.hpp; path = CPPLab1/POO/Cat.hpp; sourceTree = SOURCE_ROOT; };
+		F3DE9C8B274A972E009D400D /* Dog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Dog.cpp; path = CPPLab1/POO/Dog.cpp; sourceTree = SOURCE_ROOT; };
+		F3DE9C8C274A972E009D400D /* Dog.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Dog.hpp; path = CPPLab1/POO/Dog.hpp; sourceTree = SOURCE_ROOT; };
+		F3DE9C8E274A9739009D400D /* Bird.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bird.cpp; path = CPPLab1/POO/Bird.cpp; sourceTree = SOURCE_ROOT; };
+		F3DE9C8F274A9739009D400D /* Bird.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Bird.hpp; path = CPPLab1/POO/Bird.hpp; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +99,7 @@
 		141ACB23272F4F390070FC0D /* cpplab1 */ = {
 			isa = PBXGroup;
 			children = (
-				F361D54E273F27B200A1AEA1 /* poo */,
+				F361D54E273F27B200A1AEA1 /* POO */,
 				141ACB2B272F4F4B0070FC0D /* Fundamentals */,
 				141ACB24272F4F390070FC0D /* main.cpp */,
 			);
@@ -116,11 +131,21 @@
 			path = Fundamentals;
 			sourceTree = "<group>";
 		};
-		F361D54E273F27B200A1AEA1 /* poo */ = {
+		F361D54E273F27B200A1AEA1 /* POO */ = {
 			isa = PBXGroup;
 			children = (
+				F3DE9C8327489A6C009D400D /* POO_Exercises.hpp */,
+				F3DE9C8227489A6C009D400D /* POO_Exercises.cpp */,
+				F3DE9C8627495300009D400D /* GenericAnimal.hpp */,
+				F3DE9C8527495300009D400D /* GenericAnimal.cpp */,
+				F3DE9C89274A9720009D400D /* Cat.hpp */,
+				F3DE9C88274A9720009D400D /* Cat.cpp */,
+				F3DE9C8C274A972E009D400D /* Dog.hpp */,
+				F3DE9C8B274A972E009D400D /* Dog.cpp */,
+				F3DE9C8F274A9739009D400D /* Bird.hpp */,
+				F3DE9C8E274A9739009D400D /* Bird.cpp */,
 			);
-			path = poo;
+			path = POO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,13 +207,18 @@
 			files = (
 				F318613E2747388A007DB3B2 /* TNode.cpp in Sources */,
 				F35FC07E273FF46300272550 /* Ex_05_MemAlloc.cpp in Sources */,
+				F3DE9C8D274A972E009D400D /* Dog.cpp in Sources */,
 				F318613B274532B0007DB3B2 /* Ex_08_List.cpp in Sources */,
+				F3DE9C8427489A6C009D400D /* POO_Exercises.cpp in Sources */,
 				F318613827435DC9007DB3B2 /* Ex_07_Stack.cpp in Sources */,
 				141ACB32272F4F780070FC0D /* Exercise_01.cpp in Sources */,
 				141ACB25272F4F390070FC0D /* main.cpp in Sources */,
 				141ACB34272F4F780070FC0D /* Exercise_03.cpp in Sources */,
 				F31F77B527322DC4002E00B9 /* Exercise_04.cpp in Sources */,
+				F3DE9C8727495300009D400D /* GenericAnimal.cpp in Sources */,
+				F3DE9C8A274A9720009D400D /* Cat.cpp in Sources */,
 				F361D551273F2FC700A1AEA1 /* Ex_06_Structs.cpp in Sources */,
+				F3DE9C90274A9739009D400D /* Bird.cpp in Sources */,
 				141ACB33272F4F780070FC0D /* Exercise_02.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
