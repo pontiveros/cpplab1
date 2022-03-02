@@ -11,7 +11,7 @@
 Cat::Cat()
 : GenericAnimal()
 {
-    std::cout << "Calling Cat destructor without Parameters\n";
+    std::cout << "Calling Cat Constructor without Parameters\n";
 }
 
 Cat::Cat(const char *family, int feet, std::string mood)
