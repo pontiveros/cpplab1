@@ -56,6 +56,26 @@ void testTPoint_3()
 
 void testTPoint_4()
 {
+    TPoint p1 = TPoint(4.3, 5.4);
+    TPoint p2 = TPoint(1.2, 2.41);
+
+    p1.Print();
+    p2.Print();
+    (p1 * p2).Print();
+}
+
+void testTPoint_5()
+{
+    TPoint p1 = TPoint(4.3, 5.4);
+    TPoint p2 = TPoint(1.2, 2.41);
+
+    p1.Print();
+    p2.Print();
+    (p1 / p2).Print();
+}
+
+void testTPoint_6()
+{
     // Instance as pointers
     TPoint *p1 = new TPoint(2.3, 6.3);
     TPoint *p2 = new TPoint(2.09, 4.5);
@@ -71,7 +91,7 @@ void testTPoint_4()
 int main(int argc, const char * argv[]) 
 {
     // testTPoint_2();
-    testTPoint_3();
+    testTPoint_4();
 
     std::cout << "End of program!\n";
     return 0;
