@@ -33,7 +33,7 @@ void testTPoint_1()
 
 void testTPoint_2() 
 {
-    // Instance as object
+    // Instance as objects
     TPoint p1 = TPoint(2.3, 6.3);
     TPoint p2 = TPoint(2.09, 4.5);
 
@@ -46,6 +46,17 @@ void testTPoint_2()
 
 void testTPoint_3()
 {
+    TPoint p1 = TPoint(4.3, 5.4);
+    TPoint p2 = TPoint(1.2, 2.41);
+
+    p1.Print();
+    p2.Print();
+    (p1 - p2).Print();
+}
+
+void testTPoint_4()
+{
+    // Instance as pointers
     TPoint *p1 = new TPoint(2.3, 6.3);
     TPoint *p2 = new TPoint(2.09, 4.5);
 

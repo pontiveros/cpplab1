@@ -33,7 +33,7 @@ TPoint::~TPoint()
 
 void TPoint::Print()
 {
-    std::cout << "INSTANCE: " << _instance << " VALUES: [x: " << _x << " , y: " << _y << "]\n";
+    std::cout << "INSTANCE: " << _instance << " \tVALUES: [x: " << _x << " , y: " << _y << "]\n";
 }
 
 TPoint TPoint::operator +(const TPoint &p)
@@ -44,21 +44,29 @@ TPoint TPoint::operator +(const TPoint &p)
     return tmp;
 }
 
-/*
-TPoint& TPoint::operator -(const TPoint &p)
-{
 
+TPoint TPoint::operator -(const TPoint &p)
+{
+    TPoint tmp;
+    tmp._x = this->_x - p._x;
+    tmp._y = this->_y - p._y;
+    return tmp;
 }
 
-TPoint& TPoint::operator /(const TPoint &p)
+TPoint TPoint::operator /(const TPoint &p)
 {
-
+    TPoint tmp;
+    tmp._x = this->_x / p._x;
+    tmp._y = this->_y / p._y;
+    return tmp;
 }
-TPoint& TPoint::operator *(const TPoint &p)
+TPoint TPoint::operator *(const TPoint &p)
 {
-
+    TPoint tmp;
+    tmp._x = this->_x * p._x;
+    tmp._y = this->_y * p._y;
+    return tmp;
 }
-*/
 
 TPoint TPoint::operator =(const TPoint *p)
 {

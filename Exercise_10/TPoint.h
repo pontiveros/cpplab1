@@ -30,9 +30,9 @@ public:
 
     void Print();
     TPoint operator +(const TPoint &p);
-    // TPoint& operator -(const TPoint &p);
-    // TPoint& operator /(const TPoint &p);
-    // TPoint& operator *(const TPoint &p);
+    TPoint operator -(const TPoint &p);
+    TPoint operator /(const TPoint &p);
+    TPoint operator *(const TPoint &p);
     TPoint operator =(const TPoint *p);
 protected: 
 
