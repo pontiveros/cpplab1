@@ -17,6 +17,7 @@
 class TPoint {
 public: 
              TPoint();
+             TPoint(float x, float y);
     virtual ~TPoint();
 
     // inline functions 
@@ -24,10 +25,15 @@ public:
     inline float GetY() {   return _y; }
     inline  void SetX(float x) { _x = x; } 
     inline  void SetY(float y) { _y = y; } 
-    
+
     inline  const long GetInstance() { return _instance; }
 
     void Print();
+    TPoint operator +(const TPoint &p);
+    // TPoint& operator -(const TPoint &p);
+    // TPoint& operator /(const TPoint &p);
+    // TPoint& operator *(const TPoint &p);
+    TPoint operator =(const TPoint *p);
 protected: 
 
     float _x, _y;
