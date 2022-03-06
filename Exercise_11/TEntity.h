@@ -1,8 +1,8 @@
 //
-//  main.cpp
+//  TEntity.h
 //  Exercise_11
 //
-//  Created by Pedro Ontiveros on 03/05/22.
+//  Created by Pedro Ontiveros on 03/06/22.
 //
 
 ///////////////////////////////////////////////////////////////////////////////////
@@ -11,13 +11,17 @@
 // debugger: lldb {prog.debug (program name)}                                    //
 ///////////////////////////////////////////////////////////////////////////////////
 
-#include <iostream>
-#include "TEntity.h"
+#ifndef __TENTITY_2C060F8321AD4BB0BDDD75EC260887AB_H__
+#define __TENTITY_2C060F8321AD4BB0BDDD75EC260887AB_H__
 
-int main(int argc, const char * argv[]) 
-{
-    TEntity e(0);
-    std::cout << "Reduce Calc: " << e.Reduce(16) << "\n";
-    std::cout << "End of program!\n";
-    return 0;
-}
+class TEntity {
+    public: 
+        TEntity(int div): _div(div) {}
+        virtual ~TEntity(){}
+
+        int Reduce(int param);
+    protected: 
+    int _div;
+};
+
+#endif /* __TENTITY_2C060F8321AD4BB0BDDD75EC260887AB_H__ */

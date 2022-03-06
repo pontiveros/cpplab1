@@ -1,8 +1,8 @@
 //
-//  main.cpp
+//  TEntity.cpp
 //  Exercise_11
 //
-//  Created by Pedro Ontiveros on 03/05/22.
+//  Created by Pedro Ontiveros on 03/06/22.
 //
 
 ///////////////////////////////////////////////////////////////////////////////////
@@ -14,10 +14,14 @@
 #include <iostream>
 #include "TEntity.h"
 
-int main(int argc, const char * argv[]) 
+int TEntity::Reduce(int param)
 {
-    TEntity e(0);
-    std::cout << "Reduce Calc: " << e.Reduce(16) << "\n";
-    std::cout << "End of program!\n";
-    return 0;
+    try {
+        int result = param / _div;
+        return result;  
+    // } catch (const std::exception &e) {
+    } catch (...) {
+        std::cout << "*** ERROR: no se puede dividir por cero\n";
+        return -1;
+    } 
 }
