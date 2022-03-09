@@ -9,6 +9,10 @@ Only for education purpose
 06. Exercise_06: Struct
 07. Exercise_07: Stack & List
 08. Exercise_08: OOP,  Classes, Inheritance, and Polymorphism
-09. Exercise_09: Templates
+09. Exercise_09: Generic Programing
 10. Exercise_10: Operators Overloading
-11. Exercise_11: 
+11. Exercise_11: Exceptions
+12. Exercise_12: Callback Functions
+13. Exercise_13: Write/Read from files
+14. Exercise_14: Multithreading
+15. Exercise_15: STL

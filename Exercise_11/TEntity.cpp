@@ -14,14 +14,22 @@
 #include <iostream>
 #include "TEntity.h"
 
+
+TEntity::TEntity(int div)
+: _div(div)
+{
+
+}
+
+TEntity::~TEntity()
+{
+
+}
+
 int TEntity::Reduce(int param)
 {
-    try {
-        int result = param / _div;
-        return result;  
-    // } catch (const std::exception &e) {
-    } catch (...) {
-        std::cout << "*** ERROR: no se puede dividir por cero\n";
-        return -1;
-    } 
+    if (_div == 0) {
+        throw "Divided by 0 is not allowed, abort operation!";
+    }
+    return (param / _div);
 }

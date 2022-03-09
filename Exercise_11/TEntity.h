@@ -16,8 +16,8 @@
 
 class TEntity {
     public: 
-        TEntity(int div): _div(div) {}
-        virtual ~TEntity(){}
+        TEntity(int div);
+        virtual ~TEntity();
 
         int Reduce(int param);
     protected: 

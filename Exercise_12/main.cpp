@@ -1,8 +1,8 @@
 //
 //  main.cpp
-//  Exercise_11
+//  Exercise_12
 //
-//  Created by Pedro Ontiveros on 03/05/22.
+//  Created by Pedro Ontiveros on 03/08/22.
 //
 
 ///////////////////////////////////////////////////////////////////////////////////
@@ -12,27 +12,30 @@
 ///////////////////////////////////////////////////////////////////////////////////
 
 #include <iostream>
-#include "TEntity.h"
+#include "TFunctions.h"
 
-void test_01()
+void test_1()
 {
-    int input = 0;
-    std::cout << "Insert Integer: ";
-    std::cin >> input;
+    void (*pfn)(const char*) = fn_listener;
+    fn_worker(1);
+    std::cout << std::endl;
+    fn_worker(2, pfn);
+}
 
-    try { 
-        TEntity e(input);
-        std::cout << "Reduce: "<< e.Reduce(25) << "\n";
-    } catch (const char *err) {
-        std::cout << "************ ERROR: " << err << " ************" << std::endl;
-    } catch (...) {
-        std::cout << "************ This is a generic error ************\n";
-    }
-}  
+void test_2() 
+{
+    void (*pf[4])(double a, double b);
+    pf[0] = fn_sum;
+    pf[1] = fn_div;
+    pf[2] = fn_multi;
+    pf[3] = fn_subs;
+
+    fn_background_tasks(pf, 4);
+}
 
 int main(int argc, const char * argv[]) 
 {
-    test_01();
+    test_2();    
     std::cout << "End of program!\n";
     return 0;
 }
